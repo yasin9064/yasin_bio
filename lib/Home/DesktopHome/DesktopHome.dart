@@ -1,22 +1,23 @@
-// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors, prefer_const_literals_to_create_immutables, file_names
+// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors, prefer_const_literals_to_create_immutables, file_names, deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:yasin_bio/Resources/Colors.dart';
 
 class DesktopHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-        title: FittedBox(
-          child: Image.asset("assets/images/Portfolio.png"),
+        appBar: AppBar(
+          backgroundColor: Colors.black,
+          title: FittedBox(
+            child: Image.asset("assets/images/Portfolio.png"),
+          ),
         ),
-      ),
-      body: Container(
-        height: double.infinity,
-        width: double.infinity,
+        body: Container(
+            height: double.infinity,
+            width: double.infinity,
             color: dark,
             child: FittedBox(
               child: Row(
@@ -84,7 +85,14 @@ class DesktopHome extends StatelessWidget {
                         Row(
                           children: [
                             InkWell(
-                              onTap: () {},
+                              onTap: () async {
+                                const url =
+                                    "https://www.facebook.com/profile.php?id=100022811236943";
+
+                                if (await canLaunch(url)) {
+                                  await launch(url);
+                                }
+                              },
                               child: FaIcon(
                                 FontAwesomeIcons.facebook,
                                 color: purple,
@@ -94,7 +102,14 @@ class DesktopHome extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.only(left: 35),
                               child: InkWell(
-                                onTap: () {},
+                                onTap: () async {
+                                  const url =
+                                      "https://www.instagram.com/_lord_paradox_";
+
+                                  if (await canLaunch(url)) {
+                                    await launch(url);
+                                  }
+                                },
                                 child: FaIcon(
                                   FontAwesomeIcons.instagram,
                                   color: purple,
@@ -105,7 +120,13 @@ class DesktopHome extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.only(left: 35),
                               child: InkWell(
-                                onTap: () {},
+                                onTap: () async {
+                                  const url = "https://twitter.com/paradox8269";
+
+                                  if (await canLaunch(url)) {
+                                    await launch(url);
+                                  }
+                                },
                                 child: FaIcon(
                                   FontAwesomeIcons.twitter,
                                   color: purple,
@@ -116,7 +137,14 @@ class DesktopHome extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.only(left: 35),
                               child: InkWell(
-                                onTap: () {},
+                                onTap: () async {
+                                  const url =
+                                      "https://www.linkedin.com/in/md-yasin-0bb037297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app";
+
+                                  if (await canLaunch(url)) {
+                                    await launch(url);
+                                  }
+                                },
                                 child: FaIcon(
                                   FontAwesomeIcons.linkedin,
                                   color: purple,
