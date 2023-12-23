@@ -16,14 +16,15 @@ class DesktopHome extends StatelessWidget {
       ),
       body: Container(
         height: double.infinity,
+        width: double.infinity,
             color: dark,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                FittedBox(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 40, top: 20),
+            child: FittedBox(
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 40),
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
@@ -164,14 +165,12 @@ class DesktopHome extends StatelessWidget {
                       ],
                     ),
                   ),
-                ),
-                FittedBox(
-                  child: Padding(
-                    padding: const EdgeInsets.all(100),
-                    child: Image.asset("assets/images/Yasin.png"),
-                  ),
-                )
-              ],
+                  Padding(
+                    padding: const EdgeInsets.only(left: 90),
+                    child: Image.asset("assets/images/Yasin.png", scale: 1.7),
+                  )
+                ],
+              ),
             )));
   }
 }
