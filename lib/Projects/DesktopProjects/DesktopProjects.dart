@@ -249,21 +249,35 @@ class DesktopProjects extends StatelessWidget {
                             child: SizedBox(
                                 width: 180,
                                 child:
-                                    Image.asset('assets/Screenshots/Home.png')),
+                                    Image.asset('assets/Screenshots/WebsiteHome.png')),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: SizedBox(
                                 width: 180,
                                 child: Image.asset(
-                                    'assets/Screenshots/SignUp.png')),
+                                    'assets/Screenshots/WebsiteSkills.png')),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: SizedBox(
                                 width: 180,
                                 child: Image.asset(
-                                    'assets/Screenshots/LogIn.png')),
+                                    'assets/Screenshots/WebsiteProjects.png')),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: SizedBox(
+                                width: 180,
+                                child: Image.asset(
+                                    'assets/Screenshots/WebsiteCrew.png')),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: SizedBox(
+                                width: 180,
+                                child: Image.asset(
+                                    'assets/Screenshots/WebsiteApps.png')),
                           ),
                         ],
                       ),

@@ -1,0 +1,4 @@
+#Mon Dec 25 16:58:41 IST 2023
+base.0=E\:\\Website Projects\\Yasin's Bio\\yasin_bio\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -276,23 +276,37 @@ class MobileProjects extends StatelessWidget {
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: SizedBox(
-                                    width: 130,
+                                    width: 180,
                                     child: Image.asset(
-                                        'assets/Screenshots/SplashYasin.png')),
+                                        'assets/Screenshots/WebsiteHome.png')),
                               ),
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: SizedBox(
-                                    width: 130,
+                                    width: 180,
                                     child: Image.asset(
-                                        'assets/Screenshots/UploadYasin.png')),
+                                        'assets/Screenshots/WebsiteSkills.png')),
                               ),
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: SizedBox(
-                                    width: 130,
+                                    width: 180,
                                     child: Image.asset(
-                                        'assets/Screenshots/ProfileYasin.png')),
+                                        'assets/Screenshots/WebsiteProjects.png')),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: SizedBox(
+                                    width: 180,
+                                    child: Image.asset(
+                                        'assets/Screenshots/WebsiteCrew.png')),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: SizedBox(
+                                    width: 180,
+                                    child: Image.asset(
+                                        'assets/Screenshots/WebsiteApps.png')),
                               ),
                             ],
                           ),
@@ -323,13 +337,13 @@ class MobileProjects extends StatelessWidget {
                             height: 35,
                             child: ElevatedButton(
                                 onPressed: () async {
-                            const url =
-                                "https://github.com/yasin9064/yasin_bio";
+                                  const url =
+                                      "https://github.com/yasin9064/yasin_bio";
 
-                            if (await canLaunch(url)) {
-                              await launch(url);
-                            }
-                          },
+                                  if (await canLaunch(url)) {
+                                    await launch(url);
+                                  }
+                                },
                                 child: Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
