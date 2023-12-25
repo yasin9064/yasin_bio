@@ -188,7 +188,14 @@ class DesktopProjects extends StatelessWidget {
                               fontWeight: FontWeight.w500,
                               fontFamily: "OleoScript")),
                       ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () async {
+                            const url =
+                                "https://github.com/yasin9064/Demo-Application";
+
+                            if (await canLaunch(url)) {
+                              await launch(url);
+                            }
+                          },
                           child: Row(
                             children: [
                               FaIcon(
@@ -283,7 +290,14 @@ class DesktopProjects extends StatelessWidget {
                               fontWeight: FontWeight.w500,
                               fontFamily: "OleoScript")),
                       ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () async {
+                            const url =
+                                "https://github.com/yasin9064/yasin_bio";
+
+                            if (await canLaunch(url)) {
+                              await launch(url);
+                            }
+                          },
                           child: Row(
                             children: [
                               FaIcon(

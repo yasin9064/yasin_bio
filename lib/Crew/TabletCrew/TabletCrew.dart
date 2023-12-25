@@ -1,7 +1,8 @@
-// ignore_for_file: use_key_in_widget_constructors, file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: use_key_in_widget_constructors, file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:yasin_bio/Resources/Colors.dart';
 
 class TabletCrew extends StatelessWidget {
@@ -72,7 +73,13 @@ class TabletCrew extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () async {
+                                  const url = "https://www.mdsomad.in/";
+
+                                  if (await canLaunch(url)) {
+                                    await launch(url);
+                                  }
+                                },
                                 child: Text("Visit Website",
                                     style: TextStyle(fontFamily: "PatuaOne"))),
                           )
@@ -132,7 +139,13 @@ class TabletCrew extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () async {
+                                  const url = "https://artaza.in/";
+
+                                  if (await canLaunch(url)) {
+                                    await launch(url);
+                                  }
+                                },
                                 child: Text("Visit Website",
                                     style: TextStyle(fontFamily: "PatuaOne"))),
                           )

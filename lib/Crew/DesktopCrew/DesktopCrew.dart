@@ -1,7 +1,8 @@
-// ignore_for_file: file_names, use_key_in_widget_constructors, prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: file_names, use_key_in_widget_constructors, prefer_const_literals_to_create_immutables, prefer_const_constructors, deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:yasin_bio/Resources/Colors.dart';
 
 class DesktopCrew extends StatelessWidget {
@@ -47,7 +48,8 @@ class DesktopCrew extends StatelessWidget {
                                 children: [
                                   Text("Website link : ",
                                       style: TextStyle(
-                                          fontSize: 25, fontFamily: "PatuaOne")),
+                                          fontSize: 25,
+                                          fontFamily: "PatuaOne")),
                                   SelectableText("https://www.mdsomad.in/",
                                       style: TextStyle(
                                           fontSize: 25,
@@ -59,23 +61,33 @@ class DesktopCrew extends StatelessWidget {
                           ),
                         ),
                       ),
-                     Padding(
-                       padding: const EdgeInsets.only(left: 30, top: 15),
-                       child: Column(
-                         crossAxisAlignment: CrossAxisAlignment.center,
-                         children: [
-                         SizedBox(
-                           width: 100,
-                           height: 100,
-                           child: CircleAvatar(child: Image.asset("assets/images/SomadProfile.png"))),
-                           Padding(
-                             padding: const EdgeInsets.all(10.0),
-                             child: ElevatedButton(onPressed: (){
-                             
-                             }, child: Text("Visit Website", style: TextStyle(fontFamily: "PatuaOne"))),
-                           )
-                       ]),
-                     )
+                      Padding(
+                        padding: const EdgeInsets.only(left: 30, top: 15),
+                        child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SizedBox(
+                                  width: 100,
+                                  height: 100,
+                                  child: CircleAvatar(
+                                      child: Image.asset(
+                                          "assets/images/SomadProfile.png"))),
+                              Padding(
+                                padding: const EdgeInsets.all(10.0),
+                                child: ElevatedButton(
+                                    onPressed: () async {
+                                      const url = "https://www.mdsomad.in/";
+
+                                      if (await canLaunch(url)) {
+                                        await launch(url);
+                                      }
+                                    },
+                                    child: Text("Visit Website",
+                                        style:
+                                            TextStyle(fontFamily: "PatuaOne"))),
+                              )
+                            ]),
+                      )
                     ]),
                   ),
                   Gap(20),
@@ -102,7 +114,8 @@ class DesktopCrew extends StatelessWidget {
                                 children: [
                                   Text("Website link : ",
                                       style: TextStyle(
-                                          fontSize: 25, fontFamily: "PatuaOne")),
+                                          fontSize: 25,
+                                          fontFamily: "PatuaOne")),
                                   SelectableText("https://artaza.in/",
                                       style: TextStyle(
                                           fontSize: 25,
@@ -114,23 +127,33 @@ class DesktopCrew extends StatelessWidget {
                           ),
                         ),
                       ),
-                     Padding(
-                       padding: const EdgeInsets.only(left: 140, top: 15),
-                       child: Column(
-                         crossAxisAlignment: CrossAxisAlignment.center,
-                         children: [
-                         SizedBox(
-                           width: 100,
-                           height: 100,
-                           child: CircleAvatar(child: Image.asset("assets/images/Artaza.png"))),
-                           Padding(
-                             padding: const EdgeInsets.all(10.0),
-                             child: ElevatedButton(onPressed: (){
-                             
-                             }, child: Text("Visit Website", style: TextStyle(fontFamily: "PatuaOne"))),
-                           )
-                       ]),
-                     )
+                      Padding(
+                        padding: const EdgeInsets.only(left: 140, top: 15),
+                        child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SizedBox(
+                                  width: 100,
+                                  height: 100,
+                                  child: CircleAvatar(
+                                      child: Image.asset(
+                                          "assets/images/Artaza.png"))),
+                              Padding(
+                                padding: const EdgeInsets.all(10.0),
+                                child: ElevatedButton(
+                                    onPressed: () async {
+                                      const url = "https://artaza.in/";
+
+                                      if (await canLaunch(url)) {
+                                        await launch(url);
+                                      }
+                                    },
+                                    child: Text("Visit Website",
+                                        style:
+                                            TextStyle(fontFamily: "PatuaOne"))),
+                              )
+                            ]),
+                      )
                     ]),
                   ),
                 ],

@@ -1,8 +1,9 @@
-// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, prefer_const_literals_to_create_immutables, file_names
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, prefer_const_literals_to_create_immutables, file_names, deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:gap/gap.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:yasin_bio/Projects/DesktopProjects/DesktopProjects.dart';
 import 'package:yasin_bio/Resources/Colors.dart';
 
@@ -89,7 +90,14 @@ class TabletProjects extends StatelessWidget {
                             width: 180,
                             height: 55,
                             child: ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () async {
+                                  const url =
+                                      "https://github.com/yasin9064/Login-Page-Project";
+
+                                  if (await canLaunch(url)) {
+                                    await launch(url);
+                                  }
+                                },
                                 child: Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
@@ -102,7 +110,9 @@ class TabletProjects extends StatelessWidget {
                                     Text(
                                       "Check Now",
                                       style: TextStyle(
-                                          color: deepPurple, fontSize: 16, fontWeight: FontWeight.bold),
+                                          color: deepPurple,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold),
                                     )
                                   ],
                                 )),
@@ -196,7 +206,14 @@ class TabletProjects extends StatelessWidget {
                             width: 180,
                             height: 55,
                             child: ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () async {
+                                  const url =
+                                      "https://github.com/yasin9064/Demo-Application";
+
+                                  if (await canLaunch(url)) {
+                                    await launch(url);
+                                  }
+                                },
                                 child: Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
@@ -209,7 +226,9 @@ class TabletProjects extends StatelessWidget {
                                     Text(
                                       "Check Now",
                                       style: TextStyle(
-                                          color: deepPurple, fontSize: 16, fontWeight: FontWeight.bold),
+                                          color: deepPurple,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold),
                                     )
                                   ],
                                 )),
@@ -303,7 +322,14 @@ class TabletProjects extends StatelessWidget {
                             width: 180,
                             height: 55,
                             child: ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () async {
+                                  const url =
+                                      "https://github.com/yasin9064/yasin_bio";
+
+                                  if (await canLaunch(url)) {
+                                    await launch(url);
+                                  }
+                                },
                                 child: Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
@@ -316,7 +342,9 @@ class TabletProjects extends StatelessWidget {
                                     Text(
                                       "Check Now",
                                       style: TextStyle(
-                                          color: deepPurple, fontSize: 16, fontWeight: FontWeight.bold),
+                                          color: deepPurple,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold),
                                     )
                                   ],
                                 )),

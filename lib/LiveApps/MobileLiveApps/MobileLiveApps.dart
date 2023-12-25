@@ -1,7 +1,8 @@
-// ignore_for_file: file_names, use_key_in_widget_constructors, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: file_names, use_key_in_widget_constructors, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables, prefer_const_constructors, deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:yasin_bio/Resources/Colors.dart';
 
 class MobileLiveApps extends StatelessWidget {
@@ -69,7 +70,14 @@ class MobileLiveApps extends StatelessWidget {
                             width: 100,
                             height: 30,
                             child: ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () async {
+                                  const url =
+                                      "https://play.google.com/store/apps/details?id=com.yournotes.neon";
+
+                                  if (await canLaunch(url)) {
+                                    await launch(url);
+                                  }
+                                },
                                 child: Text("Install Now",
                                     style: TextStyle(
                                         fontFamily: "PatuaOne", fontSize: 10))),
@@ -107,8 +115,7 @@ class MobileLiveApps extends StatelessWidget {
                               child: Text(
                                   "A dynamic platform where art and technology converge. Explore a vibrant community of artists and enthusiasts, sharing and discovering unique wallpapers. Personalize your device with a diverse range of user-generated creations, from stunning illustrations to captivating photography. Join the creative movement and give your screen a unique flair with Social Wallpaper.",
                                   style: TextStyle(
-                                      fontSize: 13,
-                                      fontFamily: "PatuaOne")),
+                                      fontSize: 13, fontFamily: "PatuaOne")),
                             ),
                           ),
                         ],
@@ -131,7 +138,14 @@ class MobileLiveApps extends StatelessWidget {
                             width: 100,
                             height: 30,
                             child: ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () async {
+                                  const url =
+                                      "https://play.google.com/store/apps/details?id=com.social.wallpaper";
+
+                                  if (await canLaunch(url)) {
+                                    await launch(url);
+                                  }
+                                },
                                 child: Text("Install Now",
                                     style: TextStyle(
                                         fontFamily: "PatuaOne", fontSize: 10))),

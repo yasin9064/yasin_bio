@@ -1,7 +1,8 @@
-// ignore_for_file: file_names, use_key_in_widget_constructors, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: file_names, use_key_in_widget_constructors, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables, prefer_const_constructors, deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:yasin_bio/Resources/Colors.dart';
 
 class DesktopLiveApps extends StatelessWidget {
@@ -20,8 +21,7 @@ class DesktopLiveApps extends StatelessWidget {
         color: Colors.black,
         child: Padding(
           padding: const EdgeInsets.all(25.0),
-          child: Column(
-            children: [
+          child: Column(children: [
             FittedBox(
               child: Container(
                 width: 1450,
@@ -30,15 +30,16 @@ class DesktopLiveApps extends StatelessWidget {
                     color: purple, borderRadius: BorderRadius.circular(30)),
                 child: Row(children: [
                   Padding(
-                    padding: const EdgeInsets.only(top: 15, bottom: 15, left: 30),
+                    padding:
+                        const EdgeInsets.only(top: 15, bottom: 15, left: 30),
                     child: SizedBox(
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Name : Your Notes",
-                              style:
-                                  TextStyle(fontSize: 35, fontFamily: "PatuaOne")),
+                              style: TextStyle(
+                                  fontSize: 35, fontFamily: "PatuaOne")),
                           SizedBox(
                             width: 1100,
                             child: Text(
@@ -72,12 +73,19 @@ class DesktopLiveApps extends StatelessWidget {
                               width: 100,
                               height: 100,
                               child: CircleAvatar(
-                                  child:
-                                      Image.asset("assets/Logos/YourNotes.png"))),
+                                  child: Image.asset(
+                                      "assets/Logos/YourNotes.png"))),
                           Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () async {
+                                  const url =
+                                      "https://play.google.com/store/apps/details?id=com.yournotes.neon";
+
+                                  if (await canLaunch(url)) {
+                                    await launch(url);
+                                  }
+                                },
                                 child: Text("Install Now",
                                     style: TextStyle(fontFamily: "PatuaOne"))),
                           )
@@ -95,15 +103,16 @@ class DesktopLiveApps extends StatelessWidget {
                     color: purple, borderRadius: BorderRadius.circular(30)),
                 child: Row(children: [
                   Padding(
-                    padding: const EdgeInsets.only(top: 15, bottom: 15, left: 30),
+                    padding:
+                        const EdgeInsets.only(top: 15, bottom: 15, left: 30),
                     child: SizedBox(
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Name : Social Wallpaper",
-                              style:
-                                  TextStyle(fontSize: 35, fontFamily: "PatuaOne")),
+                              style: TextStyle(
+                                  fontSize: 35, fontFamily: "PatuaOne")),
                           SizedBox(
                             width: 1100,
                             child: Text(
@@ -137,12 +146,19 @@ class DesktopLiveApps extends StatelessWidget {
                               width: 100,
                               height: 100,
                               child: CircleAvatar(
-                                  child:
-                                      Image.asset("assets/Logos/SocialWallpaper.png"))),
+                                  child: Image.asset(
+                                      "assets/Logos/SocialWallpaper.png"))),
                           Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () async {
+                                  const url =
+                                      "https://play.google.com/store/apps/details?id=com.social.wallpaper";
+
+                                  if (await canLaunch(url)) {
+                                    await launch(url);
+                                  }
+                                },
                                 child: Text("Install Now",
                                     style: TextStyle(fontFamily: "PatuaOne"))),
                           )

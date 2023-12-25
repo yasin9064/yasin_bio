@@ -1,7 +1,8 @@
-// ignore_for_file: file_names, use_key_in_widget_constructors, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: file_names, use_key_in_widget_constructors, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables, prefer_const_constructors, deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:yasin_bio/Resources/Colors.dart';
 
 class TabletLiveApps extends StatelessWidget {
@@ -69,7 +70,14 @@ class TabletLiveApps extends StatelessWidget {
                             width: 120,
                             height: 30,
                             child: ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () async {
+                                  const url =
+                                      "https://play.google.com/store/apps/details?id=com.yournotes.neon";
+
+                                  if (await canLaunch(url)) {
+                                    await launch(url);
+                                  }
+                                },
                                 child: Text("Install Now",
                                     style: TextStyle(
                                         fontFamily: "PatuaOne", fontSize: 12))),
@@ -127,7 +135,14 @@ class TabletLiveApps extends StatelessWidget {
                             width: 120,
                             height: 30,
                             child: ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () async {
+                                  const url =
+                                      "https://play.google.com/store/apps/details?id=com.social.wallpaper";
+
+                                  if (await canLaunch(url)) {
+                                    await launch(url);
+                                  }
+                                },
                                 child: Text("Install Now",
                                     style: TextStyle(
                                         fontFamily: "PatuaOne", fontSize: 12))),
