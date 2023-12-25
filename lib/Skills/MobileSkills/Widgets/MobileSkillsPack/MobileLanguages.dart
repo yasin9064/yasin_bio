@@ -1,7 +1,8 @@
-// ignore_for_file: use_key_in_widget_constructors, file_names, prefer_const_constructors
+// ignore_for_file: use_key_in_widget_constructors, file_names, prefer_const_constructors, deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:yasin_bio/Resources/Colors.dart';
 
 class MobileLanguages extends StatelessWidget {
@@ -40,7 +41,13 @@ class MobileLanguages extends StatelessWidget {
                                         height: 50,
                                         width: 50,
                                         child: InkWell(
-                                            onTap: () {},
+                                            onTap: () async {
+                                              const url = "https://dart.dev/";
+
+                                              if (await canLaunch(url)) {
+                                                await launch(url);
+                                              }
+                                            },
                                             child: Image.asset(
                                                 "assets/Logos/Dart.png"))),
                                   ),
@@ -78,7 +85,14 @@ class MobileLanguages extends StatelessWidget {
                                         height: 50,
                                         width: 50,
                                         child: InkWell(
-                                            onTap: () {},
+                                            onTap: () async {
+                                              const url =
+                                                  "https://developer.mozilla.org/en-US/docs/Web/javascript";
+
+                                              if (await canLaunch(url)) {
+                                                await launch(url);
+                                              }
+                                            },
                                             child: Image.asset(
                                                 "assets/Logos/JavaScript.png"))),
                                   ),
@@ -120,7 +134,14 @@ class MobileLanguages extends StatelessWidget {
                                         height: 50,
                                         width: 50,
                                         child: InkWell(
-                                            onTap: () {},
+                                            onTap: () async {
+                                              const url =
+                                                  "https://learn.microsoft.com/en-us/dotnet/csharp/";
+
+                                              if (await canLaunch(url)) {
+                                                await launch(url);
+                                              }
+                                            },
                                             child: Image.asset(
                                                 "assets/Logos/C Sharp.png"))),
                                   ),
@@ -158,7 +179,14 @@ class MobileLanguages extends StatelessWidget {
                                         height: 50,
                                         width: 50,
                                         child: InkWell(
-                                            onTap: () {},
+                                            onTap: () async {
+                                              const url =
+                                                  "https://www.w3schools.com/c/c_intro.php";
+
+                                              if (await canLaunch(url)) {
+                                                await launch(url);
+                                              }
+                                            },
                                             child: Image.asset(
                                                 "assets/Logos/C Programming.png"))),
                                   ),
@@ -200,7 +228,14 @@ class MobileLanguages extends StatelessWidget {
                                         height: 50,
                                         width: 50,
                                         child: InkWell(
-                                            onTap: () {},
+                                            onTap: () async {
+                                              const url =
+                                                  "https://www.w3schools.com/html/html_intro.asp";
+
+                                              if (await canLaunch(url)) {
+                                                await launch(url);
+                                              }
+                                            },
                                             child: Image.asset(
                                                 "assets/Logos/Html 5.png"))),
                                   ),
@@ -238,7 +273,14 @@ class MobileLanguages extends StatelessWidget {
                                         height: 50,
                                         width: 50,
                                         child: InkWell(
-                                            onTap: () {},
+                                            onTap: () async {
+                                              const url =
+                                                  "https://www.w3schools.com/html/html_intro.asp";
+
+                                              if (await canLaunch(url)) {
+                                                await launch(url);
+                                              }
+                                            },
                                             child: Image.asset(
                                                 "assets/Logos/CSS3.png"))),
                                   ),

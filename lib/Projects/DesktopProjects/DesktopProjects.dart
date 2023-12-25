@@ -1,9 +1,10 @@
-// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, file_names, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, sized_box_for_whitespace
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, file_names, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, sized_box_for_whitespace, deprecated_member_use
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:gap/gap.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:yasin_bio/Resources/Colors.dart';
 
 class DesktopProjects extends StatelessWidget {
@@ -85,7 +86,14 @@ class DesktopProjects extends StatelessWidget {
                               fontWeight: FontWeight.w500,
                               fontFamily: "OleoScript")),
                       ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () async {
+                            const url =
+                                "https://github.com/yasin9064/Login-Page-Project";
+
+                            if (await canLaunch(url)) {
+                              await launch(url);
+                            }
+                          },
                           child: Row(
                             children: [
                               FaIcon(

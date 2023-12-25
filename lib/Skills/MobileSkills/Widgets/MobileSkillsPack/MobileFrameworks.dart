@@ -1,7 +1,8 @@
-// ignore_for_file: use_key_in_widget_constructors, file_names, prefer_const_constructors
+// ignore_for_file: use_key_in_widget_constructors, file_names, prefer_const_constructors, deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:yasin_bio/Resources/Colors.dart';
 
 class MobileFrameworks extends StatelessWidget {
@@ -42,7 +43,14 @@ class MobileFrameworks extends StatelessWidget {
                                           height: 50,
                                           width: 50,
                                           child: InkWell(
-                                              onTap: () {},
+                                              onTap: () async {
+                                                const url =
+                                                    "https://flutter.dev/";
+
+                                                if (await canLaunch(url)) {
+                                                  await launch(url);
+                                                }
+                                              },
                                               child: Image.asset(
                                                   "assets/Logos/Flutter.png"))),
                                     ),
@@ -80,7 +88,14 @@ class MobileFrameworks extends StatelessWidget {
                                           height: 50,
                                           width: 50,
                                           child: InkWell(
-                                              onTap: () {},
+                                              onTap: () async {
+                                                const url =
+                                                    "https://www.unrealengine.com/en-US";
+
+                                                if (await canLaunch(url)) {
+                                                  await launch(url);
+                                                }
+                                              },
                                               child: Image.asset(
                                                   "assets/Logos/Unreal Engine.png"))),
                                     ),
@@ -125,7 +140,14 @@ class MobileFrameworks extends StatelessWidget {
                                           height: 50,
                                           width: 50,
                                           child: InkWell(
-                                              onTap: () {},
+                                              onTap: () async {
+                                                const url =
+                                                    "https://unity.com/";
+
+                                                if (await canLaunch(url)) {
+                                                  await launch(url);
+                                                }
+                                              },
                                               child: Image.asset(
                                                   "assets/Logos/Unity.png"))),
                                     ),

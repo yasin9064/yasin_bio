@@ -9,7 +9,6 @@ import 'package:yasin_bio/Resources/Colors.dart';
 class TabletHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
