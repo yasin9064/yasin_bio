@@ -103,7 +103,7 @@ class MobileLiveApps extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Name : Your Notes",
+                          Text("Name : Social Wallpaper",
                               style: TextStyle(
                                   fontSize: 20, fontFamily: "PatuaOne")),
                           Gap(2),

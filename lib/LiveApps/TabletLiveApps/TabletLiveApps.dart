@@ -101,7 +101,7 @@ class TabletLiveApps extends StatelessWidget {
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Name : Your Notes",
+                          Text("Name : Social Wallpaper",
                               style: TextStyle(
                                   fontSize: 32, fontFamily: "PatuaOne")),
                           Container(
@@ -158,4 +158,3 @@ class TabletLiveApps extends StatelessWidget {
     );
   }
 }
-
