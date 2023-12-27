@@ -76781,16 +76781,16 @@ case 5:case 3:return A.F(null,r)}})
 return A.G($async$$0,r)},
 $S:1}
 A.GC.prototype={
-E(a){var s,r,q,p,o,n=null,m="Name : Your Notes",l="PatuaOne",k="Install Now",j=A.eH(B.n,n,A.bi(A.a0("assets/images/Portfolio.png",n))),i=t.w,h=A.ay(a,n,i).w
-i=A.ay(a,n,i).w
+E(a){var s,r,q,p,o,n=null,m="PatuaOne",l="Install Now",k=A.eH(B.n,n,A.bi(A.a0("assets/images/Portfolio.png",n))),j=t.w,i=A.ay(a,n,j).w
+j=A.ay(a,n,j).w
 s=$.W()
 r=A.bT(20)
 q=t.p
-r=A.bi(A.ae(n,A.a9(A.a([new A.k(B.lF,A.a_(A.a([A.B(m,n,n,A.x(n,n,n,n,n,n,n,n,l,n,n,20,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),A.bR(2),A.T(A.ch(A.B(u.R,n,n,A.x(n,n,n,n,n,n,n,n,l,n,n,13,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),n,B.F,n,n,B.Y),60,300)],q),B.aq,B.bi,B.f),n),new A.k(B.lE,A.a_(A.a([A.T(A.h8(A.a0("assets/Logos/YourNotes.png",n)),60,60),A.bR(8),A.T(A.dp(A.B(k,n,n,A.x(n,n,n,n,n,n,n,n,l,n,n,10,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),new A.a0J()),30,100)],q),B.h,B.i,B.f),n)],q),B.h,B.i,B.f),B.k,n,n,new A.b9(s,n,n,r,n,n,B.H),n,120,n,n,n,n,460))
+r=A.bi(A.ae(n,A.a9(A.a([new A.k(B.lF,A.a_(A.a([A.B("Name : Your Notes",n,n,A.x(n,n,n,n,n,n,n,n,m,n,n,20,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),A.bR(2),A.T(A.ch(A.B(u.R,n,n,A.x(n,n,n,n,n,n,n,n,m,n,n,13,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),n,B.F,n,n,B.Y),60,300)],q),B.aq,B.bi,B.f),n),new A.k(B.lE,A.a_(A.a([A.T(A.h8(A.a0("assets/Logos/YourNotes.png",n)),60,60),A.bR(8),A.T(A.dp(A.B(l,n,n,A.x(n,n,n,n,n,n,n,n,m,n,n,10,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),new A.a0J()),30,100)],q),B.h,B.i,B.f),n)],q),B.h,B.i,B.f),B.k,n,n,new A.b9(s,n,n,r,n,n,B.H),n,120,n,n,n,n,460))
 s=A.bR(20)
 p=$.W()
 o=A.bT(20)
-return A.ex(j,A.ae(n,new A.k(B.lB,A.a_(A.a([r,s,A.bi(A.ae(n,A.a9(A.a([new A.k(B.lF,A.T(A.a_(A.a([A.B(m,n,n,A.x(n,n,n,n,n,n,n,n,l,n,n,20,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),A.bR(2),A.T(A.ch(A.B("A dynamic platform where art and technology converge. Explore a vibrant community of artists and enthusiasts, sharing and discovering unique wallpapers. Personalize your device with a diverse range of user-generated creations, from stunning illustrations to captivating photography. Join the creative movement and give your screen a unique flair with Social Wallpaper.",n,n,A.x(n,n,n,n,n,n,n,n,l,n,n,13,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),n,B.F,n,n,B.Y),60,300)],q),B.aq,B.bi,B.f),n,n),n),new A.k(B.lE,A.a_(A.a([A.T(A.h8(A.a0("assets/Logos/SocialWallpaper.png",n)),60,60),A.bR(8),A.T(A.dp(A.B(k,n,n,A.x(n,n,n,n,n,n,n,n,l,n,n,10,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),new A.a0K()),30,100)],q),B.h,B.i,B.f),n)],q),B.h,B.i,B.f),B.k,n,n,new A.b9(p,n,n,o,n,n,B.H),n,120,n,n,n,n,460))],q),B.h,B.i,B.f),n),B.k,B.n,n,n,n,i.a.b,n,n,n,n,h.a.a),n)}}
+return A.ex(k,A.ae(n,new A.k(B.lB,A.a_(A.a([r,s,A.bi(A.ae(n,A.a9(A.a([new A.k(B.lF,A.T(A.a_(A.a([A.B("Name : Social Wallpaper",n,n,A.x(n,n,n,n,n,n,n,n,m,n,n,20,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),A.bR(2),A.T(A.ch(A.B("A dynamic platform where art and technology converge. Explore a vibrant community of artists and enthusiasts, sharing and discovering unique wallpapers. Personalize your device with a diverse range of user-generated creations, from stunning illustrations to captivating photography. Join the creative movement and give your screen a unique flair with Social Wallpaper.",n,n,A.x(n,n,n,n,n,n,n,n,m,n,n,13,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),n,B.F,n,n,B.Y),60,300)],q),B.aq,B.bi,B.f),n,n),n),new A.k(B.lE,A.a_(A.a([A.T(A.h8(A.a0("assets/Logos/SocialWallpaper.png",n)),60,60),A.bR(8),A.T(A.dp(A.B(l,n,n,A.x(n,n,n,n,n,n,n,n,m,n,n,10,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),new A.a0K()),30,100)],q),B.h,B.i,B.f),n)],q),B.h,B.i,B.f),B.k,n,n,new A.b9(p,n,n,o,n,n,B.H),n,120,n,n,n,n,460))],q),B.h,B.i,B.f),n),B.k,B.n,n,n,n,j.a.b,n,n,n,n,i.a.a),n)}}
 A.a0J.prototype={
 $0(){var s=0,r=A.H(t.H)
 var $async$$0=A.I(function(a,b){if(a===1)return A.E(b,r)
@@ -76816,16 +76816,16 @@ case 5:case 3:return A.F(null,r)}})
 return A.G($async$$0,r)},
 $S:1}
 A.Jp.prototype={
-E(a){var s,r,q,p,o,n=null,m="Name : Your Notes",l="PatuaOne",k="Install Now",j=A.eH(B.n,n,A.bi(A.a0("assets/images/Portfolio.png",n))),i=t.w,h=A.ay(a,n,i).w
-i=A.ay(a,n,i).w
+E(a){var s,r,q,p,o,n=null,m="PatuaOne",l="Install Now",k=A.eH(B.n,n,A.bi(A.a0("assets/images/Portfolio.png",n))),j=t.w,i=A.ay(a,n,j).w
+j=A.ay(a,n,j).w
 s=$.W()
 r=A.bT(20)
 q=t.p
-r=A.bi(A.ae(n,A.a9(A.a([new A.k(B.lI,A.a_(A.a([A.B(m,n,n,A.x(n,n,n,n,n,n,n,n,l,n,n,32,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),A.ae(n,A.ch(A.B(u.R,n,n,A.x(n,n,n,n,n,n,n,n,l,n,n,17,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),n,B.F,n,n,B.Y),B.k,n,n,n,n,70,new A.a8(0,10,0,0),n,n,n,600)],q),B.aq,B.i,B.f),n),new A.y_(n),new A.k(B.lA,A.a_(A.a([A.T(A.h8(A.a0("assets/Logos/YourNotes.png",n)),90,90),A.bR(8),A.T(A.dp(A.B(k,n,n,A.x(n,n,n,n,n,n,n,n,l,n,n,12,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),new A.a6V()),30,120)],q),B.h,B.i,B.f),n)],q),B.h,B.i,B.f),B.k,n,n,new A.b9(s,n,n,r,n,n,B.H),n,170,n,n,n,n,860))
+r=A.bi(A.ae(n,A.a9(A.a([new A.k(B.lI,A.a_(A.a([A.B("Name : Your Notes",n,n,A.x(n,n,n,n,n,n,n,n,m,n,n,32,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),A.ae(n,A.ch(A.B(u.R,n,n,A.x(n,n,n,n,n,n,n,n,m,n,n,17,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),n,B.F,n,n,B.Y),B.k,n,n,n,n,70,new A.a8(0,10,0,0),n,n,n,600)],q),B.aq,B.i,B.f),n),new A.y_(n),new A.k(B.lA,A.a_(A.a([A.T(A.h8(A.a0("assets/Logos/YourNotes.png",n)),90,90),A.bR(8),A.T(A.dp(A.B(l,n,n,A.x(n,n,n,n,n,n,n,n,m,n,n,12,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),new A.a6V()),30,120)],q),B.h,B.i,B.f),n)],q),B.h,B.i,B.f),B.k,n,n,new A.b9(s,n,n,r,n,n,B.H),n,170,n,n,n,n,860))
 s=A.bR(20)
 p=$.W()
 o=A.bT(20)
-return A.ex(j,A.ae(n,new A.k(B.lB,A.a_(A.a([r,s,A.bi(A.ae(n,A.a9(A.a([new A.k(B.lI,A.a_(A.a([A.B(m,n,n,A.x(n,n,n,n,n,n,n,n,l,n,n,32,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),A.ae(n,A.ch(A.B(u.o,n,n,A.x(n,n,n,n,n,n,n,n,l,n,n,17,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),n,B.F,n,n,B.Y),B.k,n,n,n,n,70,new A.a8(0,10,0,0),n,n,n,600)],q),B.aq,B.i,B.f),n),new A.y_(n),new A.k(B.lA,A.a_(A.a([A.T(A.h8(A.a0("assets/Logos/SocialWallpaper.png",n)),90,90),A.bR(8),A.T(A.dp(A.B(k,n,n,A.x(n,n,n,n,n,n,n,n,l,n,n,12,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),new A.a6W()),30,120)],q),B.h,B.i,B.f),n)],q),B.h,B.i,B.f),B.k,n,n,new A.b9(p,n,n,o,n,n,B.H),n,170,n,n,n,n,860))],q),B.h,B.i,B.f),n),B.k,B.n,n,n,n,i.a.b,n,n,n,n,h.a.a),n)}}
+return A.ex(k,A.ae(n,new A.k(B.lB,A.a_(A.a([r,s,A.bi(A.ae(n,A.a9(A.a([new A.k(B.lI,A.a_(A.a([A.B("Name : Social Wallpaper",n,n,A.x(n,n,n,n,n,n,n,n,m,n,n,32,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),A.ae(n,A.ch(A.B(u.o,n,n,A.x(n,n,n,n,n,n,n,n,m,n,n,17,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),n,B.F,n,n,B.Y),B.k,n,n,n,n,70,new A.a8(0,10,0,0),n,n,n,600)],q),B.aq,B.i,B.f),n),new A.y_(n),new A.k(B.lA,A.a_(A.a([A.T(A.h8(A.a0("assets/Logos/SocialWallpaper.png",n)),90,90),A.bR(8),A.T(A.dp(A.B(l,n,n,A.x(n,n,n,n,n,n,n,n,m,n,n,12,n,n,n,n,n,!0,n,n,n,n,n,n,n,n),n),new A.a6W()),30,120)],q),B.h,B.i,B.f),n)],q),B.h,B.i,B.f),B.k,n,n,new A.b9(p,n,n,o,n,n,B.H),n,170,n,n,n,n,860))],q),B.h,B.i,B.f),n),B.k,B.n,n,n,n,j.a.b,n,n,n,n,i.a.a),n)}}
 A.a6V.prototype={
 $0(){var s=0,r=A.H(t.H)
 var $async$$0=A.I(function(a,b){if(a===1)return A.E(b,r)

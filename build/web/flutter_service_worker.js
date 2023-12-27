@@ -79,9 +79,9 @@ const RESOURCES = {".vscode/settings.json": "19751b2a32e46d1ba1477f357123a898",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "a31699f4f596a836323cd8c7891f6bf4",
-"/": "a31699f4f596a836323cd8c7891f6bf4",
-"main.dart.js": "159ffa724a85725e4a86d25e23a612c6",
+"index.html": "3996aba146255e9a9872268bcaa9d870",
+"/": "3996aba146255e9a9872268bcaa9d870",
+"main.dart.js": "3d63622b7a9e7612df0c4dbe9eac433c",
 "manifest.json": "b077e78a7d282545b5014c3e791f9c80",
 "version.json": "e0a225beb24b59e54ad47e4eafe46d1f"};
 // The application shell files that are downloaded before a service worker can
